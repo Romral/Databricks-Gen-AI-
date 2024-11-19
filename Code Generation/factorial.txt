@@ -1,0 +1,37 @@
+Sure! Here's a Python code snippet that calculates the factorial of a number:
+
+```python
+def factorial(n):
+    """
+    Calculate the factorial of a given number.
+
+    Parameters:
+        n (int): The number for which factorial needs to be calculated.
+
+    Returns:
+        int: The factorial of the given number.
+    """
+
+    # Check if the input is a positive integer
+    if not isinstance(n, int) or n < 0:
+        raise ValueError("Input must be a positive integer.")
+
+    # Base case: factorial of 0 is 1
+    if n == 0:
+        return 1
+    
+    # Recursive step: calculate factorial using recursion
+    return n * factorial(n - 1)
+```
+
+This code defines a function called `factorial` that takes an integer `n` as input and calculates its factorial. It includes detailed comments to explain the purpose and functionality of each part of the code. The code also performs input validation to ensure that the input is a positive integer.
+
+You can use this code by calling the `factorial` function and passing the desired number as an argument. For example:
+
+```python
+number = 5
+result = factorial(number)
+print(f"The factorial of {number} is {result}.")
+```
+
+This will output: "The factorial of 5 is 120."
